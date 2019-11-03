@@ -1,5 +1,5 @@
-import uuid
 import datetime
+import uuid
 
 from src.common.database import Database
 from src.models.post import Post
@@ -34,7 +34,7 @@ class Blog(object):
             'author_id': self.author_id,
             'title': self.title,
             'description': self.description,
-            'id': self._id
+            '_id': self._id
         }
 
     @classmethod
