@@ -78,8 +78,6 @@ def create_new_post(blog_id):
         new_post.save_to_mongo()
 
         return make_response(blog_posts(blog_id))
-        # render_template('user_blogs')
-
 
 @app.route('/posts/<string:blog_id>')
 def blog_posts(blog_id):
